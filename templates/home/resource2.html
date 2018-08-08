@@ -1,0 +1,231 @@
+{% extends 'home/total.html' %}
+
+<!-- navigation buttons part -->
+
+{% block body%}
+<!-- modal part -->
+{% load static %}
+<div id="login" class="modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+
+        <form>
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" class="form-control" id="name">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+   <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="signup" class=" signup modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">SIGN-UP</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+       <form>
+ <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id='name' >
+  </div>
+ <div class="form-group">
+    <label for="user">Username:</label>
+    <input type="text" class="form-control" id='user' >
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+   <div class="form-group">
+    <label for="number">Phone-number:</label>
+    <input type="number" class="form-control" id='number' >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Sign-Up</button>
+</form>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal part -->
+<!-- adjusting-nav background -->
+<div class="container-fluid" style="height:56px;width:100%;">
+</div>
+
+<!-- card style Resources menu -->
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 0;">
+<div class='container-fluid w3-animate-zoom' id='previous-events'>
+ <h1 style="text-align: center;">Basics of Astronomy</h1>
+ <hr/>
+ <div class="content">
+                
+                <p><b> Astronomy:</b> - Astronomy is the science of measuring the positions and characteristics of heavenly bodies or you can say it is mainly depends on observation<br>
+<b> Astrophysics:</b> - Astophysics mainly consists of theorotical part or you can say astrophysics is the application of physics to understand astronomy.<br>
+<b> Cosmogony:</b> - It is the branch of science that deals with the origin of the universe, especially the solar system.</p>
+<hr>
+
+<center><h2> Units Used in Astronomy</h2></center>
+<h3>1. Distance</h3>
+<p><b>&nbsp;a) Astronomical Unit (AU)</b>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The distance between earth and sun is taken as 1 AU. It is convenient to express distance between planets and sun in AU
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mspace width=&quot;thinmathspace&quot; /><mi>A</mi><mi>U</mi><mo>=</mo><mn>1.496</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>11</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>m</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 12.286em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.307em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.5em, 1009.29em, 2.731em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3" style="font-family: STIXGeneral;">1</span><span class="mspace" id="MathJax-Span-4" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-5" style="font-family: STIXGeneral; font-style: italic;">A</span><span class="mi" id="MathJax-Span-6" style="font-family: STIXGeneral; font-style: italic;">U<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.043em;"></span></span><span class="mo" id="MathJax-Span-7" style="font-family: STIXGeneral; padding-left: 0.313em;">=</span><span class="mn" id="MathJax-Span-8" style="font-family: STIXGeneral; padding-left: 0.313em;">1.496</span><span class="mo" id="MathJax-Span-9" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-10" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-11" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-12"><span class="mrow" id="MathJax-Span-13"><span class="mn" id="MathJax-Span-14" style="font-size: 70.7%; font-family: STIXGeneral;">11</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-15" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-16" style="font-family: STIXGeneral; font-style: italic;">m</span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.104em; border-left: 0px solid; width: 0px; height: 1.339em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mspace width="thinmathspace"></mspace><mi>A</mi><mi>U</mi><mo>=</mo><mn>1.496</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>11</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>m</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">1 \,AU=1.496\times10^{11}\, m</script>
+<br><br>
+<b>&nbsp;a) Lightyear (ly)</b>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The distance travelled by light in one year is called 1 ly.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mspace width=&quot;thinmathspace&quot; /><mi>l</mi><mi>y</mi><mo>=</mo><mn>9.461</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>15</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>m</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-17" style="width: 11.583em; display: inline-block;"><span style="display: inline-block; position: relative; width: 8.766em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.491em, 1008.75em, 2.912em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-18"><span class="mn" id="MathJax-Span-19" style="font-family: STIXGeneral;">1</span><span class="mspace" id="MathJax-Span-20" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-21" style="font-family: STIXGeneral; font-style: italic;">l<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.001em;"></span></span><span class="mi" id="MathJax-Span-22" style="font-family: STIXGeneral; font-style: italic;">y</span><span class="mo" id="MathJax-Span-23" style="font-family: STIXGeneral; padding-left: 0.313em;">=</span><span class="mn" id="MathJax-Span-24" style="font-family: STIXGeneral; padding-left: 0.313em;">9.461</span><span class="mo" id="MathJax-Span-25" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-26" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-27" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-28"><span class="mrow" id="MathJax-Span-29"><span class="mn" id="MathJax-Span-30" style="font-size: 70.7%; font-family: STIXGeneral;">15</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-31" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-32" style="font-family: STIXGeneral; font-style: italic;">m</span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.343em; border-left: 0px solid; width: 0px; height: 1.589em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mspace width="thinmathspace"></mspace><mi>l</mi><mi>y</mi><mo>=</mo><mn>9.461</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>15</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>m</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">1 \,ly=9.461\times10^{15}\, m</script>
+<br><br>
+<b>&nbsp;a) Parsec (pc)</b>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is the distance at which an arc 1 AU subtends an angle of 1”. It is convenient to express distance of stars from earth by parallax metod.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mspace width=&quot;thinmathspace&quot; /><mi>p</mi><mi>c</mi><mo>=</mo><mn>3.086</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>16</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>m</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-33" style="width: 11.853em; display: inline-block;"><span style="display: inline-block; position: relative; width: 8.983em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.494em, 1008.97em, 2.911em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-34"><span class="mn" id="MathJax-Span-35" style="font-family: STIXGeneral;">1</span><span class="mspace" id="MathJax-Span-36" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-37" style="font-family: STIXGeneral; font-style: italic;">p</span><span class="mi" id="MathJax-Span-38" style="font-family: STIXGeneral; font-style: italic;">c</span><span class="mo" id="MathJax-Span-39" style="font-family: STIXGeneral; padding-left: 0.313em;">=</span><span class="mn" id="MathJax-Span-40" style="font-family: STIXGeneral; padding-left: 0.313em;">3.086</span><span class="mo" id="MathJax-Span-41" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-42" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-43" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-44"><span class="mrow" id="MathJax-Span-45"><span class="mn" id="MathJax-Span-46" style="font-size: 70.7%; font-family: STIXGeneral;">16</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-47" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-48" style="font-family: STIXGeneral; font-style: italic;">m</span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.342em; border-left: 0px solid; width: 0px; height: 1.584em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mspace width="thinmathspace"></mspace><mi>p</mi><mi>c</mi><mo>=</mo><mn>3.086</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>16</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>m</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">1\,pc=3.086\times10^{16}\, m</script> [distance\,in\,parsecs =\frac{1}{\theta(in “) made\,to\,earth’s\,orbital\,radius}]
+<br></p>
+
+<h3>2. Mass</h3>
+<p>For planets we use jupiter’s mass which is equal to <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1.899</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>27</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>k</mi><mi>g</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-49" style="width: 8.282em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.277em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.5em, 1006.25em, 2.912em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-50"><span class="mn" id="MathJax-Span-51" style="font-family: STIXGeneral;">1.899</span><span class="mo" id="MathJax-Span-52" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-53" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-54" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-55"><span class="mrow" id="MathJax-Span-56"><span class="mn" id="MathJax-Span-57" style="font-size: 70.7%; font-family: STIXGeneral;">27</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-58" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-59" style="font-family: STIXGeneral; font-style: italic;">k<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.017em;"></span></span><span class="mi" id="MathJax-Span-60" style="font-family: STIXGeneral; font-style: italic;">g</span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.343em; border-left: 0px solid; width: 0px; height: 1.578em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.899</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>27</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>k</mi><mi>g</mi></math></span></span><script type="math/tex" id="MathJax-Element-4">1.899\times10^{27}\,kg</script>. Mass of stars is expressed in Solar mass which is equal to <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1.98</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>30</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>k</mi><mi>g</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-61" style="width: 7.687em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.79em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.5em, 1005.76em, 2.912em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-62"><span class="mn" id="MathJax-Span-63" style="font-family: STIXGeneral;">1.98</span><span class="mo" id="MathJax-Span-64" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-65" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-66" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-67"><span class="mrow" id="MathJax-Span-68"><span class="mn" id="MathJax-Span-69" style="font-size: 70.7%; font-family: STIXGeneral;">30</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-70" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-71" style="font-family: STIXGeneral; font-style: italic;">k<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.017em;"></span></span><span class="mi" id="MathJax-Span-72" style="font-family: STIXGeneral; font-style: italic;">g</span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.343em; border-left: 0px solid; width: 0px; height: 1.578em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.98</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>30</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>k</mi><mi>g</mi></math></span></span><script type="math/tex" id="MathJax-Element-5">1.98\times10^{30}\,kg</script>
+<br></p>
+
+<h3>3. Constants</h3>
+<p>a) <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>G</mi><mo>=</mo><mn>6.673</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>11</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>N</mi><msup><mi>m</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msup><mi>k</mi><msup><mi>g</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-73" style="width: 15.317em; display: inline-block;"><span style="display: inline-block; position: relative; width: 11.58em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.5em, 1011.58em, 2.912em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-74"><span class="mi" id="MathJax-Span-75" style="font-family: STIXGeneral; font-style: italic;">G</span><span class="mo" id="MathJax-Span-76" style="font-family: STIXGeneral; padding-left: 0.313em;">=</span><span class="mn" id="MathJax-Span-77" style="font-family: STIXGeneral; padding-left: 0.313em;">6.673</span><span class="mo" id="MathJax-Span-78" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-79" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 2.266em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-80" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-81"><span class="mrow" id="MathJax-Span-82"><span class="mo" id="MathJax-Span-83" style="font-size: 70.7%; font-family: STIXGeneral;">−</span><span class="mn" id="MathJax-Span-84" style="font-size: 70.7%; font-family: STIXGeneral;">11</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-85" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-86" style="font-family: STIXGeneral; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em;"></span></span><span class="msubsup" id="MathJax-Span-87"><span style="display: inline-block; position: relative; width: 1.151em; height: 0px;"><span style="position: absolute; clip: rect(3.401em, 1000.7em, 4.176em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-88" style="font-family: STIXGeneral; font-style: italic;">m</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.722em;"><span class="texatom" id="MathJax-Span-89"><span class="mrow" id="MathJax-Span-90"><span class="mn" id="MathJax-Span-91" style="font-size: 70.7%; font-family: STIXGeneral;">2</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mi" id="MathJax-Span-92" style="font-family: STIXGeneral; font-style: italic;">k<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.017em;"></span></span><span class="msubsup" id="MathJax-Span-93"><span style="display: inline-block; position: relative; width: 1.413em; height: 0px;"><span style="position: absolute; clip: rect(3.401em, 1000.47em, 4.373em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-94" style="font-family: STIXGeneral; font-style: italic;">g</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.5em;"><span class="texatom" id="MathJax-Span-95"><span class="mrow" id="MathJax-Span-96"><span class="mo" id="MathJax-Span-97" style="font-size: 70.7%; font-family: STIXGeneral;">−</span><span class="mn" id="MathJax-Span-98" style="font-size: 70.7%; font-family: STIXGeneral;">2</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.343em; border-left: 0px solid; width: 0px; height: 1.578em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>G</mi><mo>=</mo><mn>6.673</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>11</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>N</mi><msup><mi>m</mi><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msup><mi>k</mi><msup><mi>g</mi><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-6">G=6.673\times10^{-11} \,Nm^{2}kg^{-2}</script><br>
+b) <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>c</mi><mo>=</mo><mn>299</mn><mo>,</mo><mn>792</mn><mo>,</mo><mn>458</mn><mspace width=&quot;thinmathspace&quot; /><mi>m</mi><msup><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>&amp;#x2248;</mo><mn>3</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mn>8</mn></msup><mspace width=&quot;thinmathspace&quot; /><mi>m</mi><msup><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-99" style="width: 20.944em; display: inline-block;"><span style="display: inline-block; position: relative; width: 15.855em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.5em, 1015.85em, 2.847em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-100"><span class="mi" id="MathJax-Span-101" style="font-family: STIXGeneral; font-style: italic;">c</span><span class="mo" id="MathJax-Span-102" style="font-family: STIXGeneral; padding-left: 0.313em;">=</span><span class="mn" id="MathJax-Span-103" style="font-family: STIXGeneral; padding-left: 0.313em;">299</span><span class="mo" id="MathJax-Span-104" style="font-family: STIXGeneral;">,</span><span class="mn" id="MathJax-Span-105" style="font-family: STIXGeneral; padding-left: 0.188em;">792</span><span class="mo" id="MathJax-Span-106" style="font-family: STIXGeneral;">,</span><span class="mn" id="MathJax-Span-107" style="font-family: STIXGeneral; padding-left: 0.188em;">458</span><span class="mspace" id="MathJax-Span-108" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-109" style="font-family: STIXGeneral; font-style: italic;">m</span><span class="msubsup" id="MathJax-Span-110"><span style="display: inline-block; position: relative; width: 1.302em; height: 0px;"><span style="position: absolute; clip: rect(3.4em, 1000.37em, 4.18em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-111" style="font-family: STIXGeneral; font-style: italic;">s</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.389em;"><span class="texatom" id="MathJax-Span-112"><span class="mrow" id="MathJax-Span-113"><span class="mo" id="MathJax-Span-114" style="font-size: 70.7%; font-family: STIXGeneral;">−</span><span class="mn" id="MathJax-Span-115" style="font-size: 70.7%; font-family: STIXGeneral;">1</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mo" id="MathJax-Span-116" style="font-family: STIXGeneral; padding-left: 0.313em;">≈</span><span class="mn" id="MathJax-Span-117" style="font-family: STIXGeneral; padding-left: 0.313em;">3</span><span class="mo" id="MathJax-Span-118" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-119" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.429em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-120" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="mn" id="MathJax-Span-121" style="font-size: 70.7%; font-family: STIXGeneral;">8</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-122" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-123" style="font-family: STIXGeneral; font-style: italic;">m</span><span class="msubsup" id="MathJax-Span-124"><span style="display: inline-block; position: relative; width: 1.302em; height: 0px;"><span style="position: absolute; clip: rect(3.4em, 1000.37em, 4.18em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-125" style="font-family: STIXGeneral; font-style: italic;">s</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.389em;"><span class="texatom" id="MathJax-Span-126"><span class="mrow" id="MathJax-Span-127"><span class="mo" id="MathJax-Span-128" style="font-size: 70.7%; font-family: STIXGeneral;">−</span><span class="mn" id="MathJax-Span-129" style="font-size: 70.7%; font-family: STIXGeneral;">1</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.258em; border-left: 0px solid; width: 0px; height: 1.492em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>=</mo><mn>299</mn><mo>,</mo><mn>792</mn><mo>,</mo><mn>458</mn><mspace width="thinmathspace"></mspace><mi>m</mi><msup><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>≈</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mspace width="thinmathspace"></mspace><mi>m</mi><msup><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-7">c=299,792,458\,ms^{-1}\approx3\times10^8\,ms^{-1}</script><br>
+c) Solar Luminosity<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mspace width=&quot;thinmathspace&quot; /><mo>=</mo><mn>3.828</mn><mo>&amp;#x00D7;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>26</mn></mrow></msup><mspace width=&quot;thinmathspace&quot; /><mi>W</mi></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-130" style="width: 9.797em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.413em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.494em, 1007.41em, 2.731em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-131"><span class="mspace" id="MathJax-Span-132" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mo" id="MathJax-Span-133" style="font-family: STIXGeneral;">=</span><span class="mn" id="MathJax-Span-134" style="font-family: STIXGeneral; padding-left: 0.313em;">3.828</span><span class="mo" id="MathJax-Span-135" style="font-family: STIXGeneral; padding-left: 0.25em;">×</span><span class="msubsup" id="MathJax-Span-136" style="padding-left: 0.25em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.166em, 1000.98em, 4.181em, -1000em); top: -4.004em; left: 0em;"><span class="mn" id="MathJax-Span-137" style="font-family: STIXGeneral;">10</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.407em; left: 1em;"><span class="texatom" id="MathJax-Span-138"><span class="mrow" id="MathJax-Span-139"><span class="mn" id="MathJax-Span-140" style="font-size: 70.7%; font-family: STIXGeneral;">26</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mspace" id="MathJax-Span-141" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-142" style="font-family: STIXGeneral; font-style: italic;">W<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.073em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.104em; border-left: 0px solid; width: 0px; height: 1.346em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mspace width="thinmathspace"></mspace><mo>=</mo><mn>3.828</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>26</mn></mrow></msup><mspace width="thinmathspace"></mspace><mi>W</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">\,=3.828 \times 10^{26} \,W</script>
+<br>d) Solar Constant <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" style="position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>=</mo><mn>1370</mn><mspace width=&quot;thinmathspace&quot; /><mi>W</mi><msup><mi>m</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup></math>" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-143" style="width: 7.524em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.682em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.54em, 1005.68em, 2.724em, -1000em); top: -2.543em; left: 0em;"><span class="mrow" id="MathJax-Span-144"><span class="mo" id="MathJax-Span-145" style="font-family: STIXGeneral;">=</span><span class="mn" id="MathJax-Span-146" style="font-family: STIXGeneral; padding-left: 0.313em;">1370</span><span class="mspace" id="MathJax-Span-147" style="height: 0em; vertical-align: 0em; width: 0.188em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-148" style="font-family: STIXGeneral; font-style: italic;">W<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.073em;"></span></span><span class="msubsup" id="MathJax-Span-149"><span style="display: inline-block; position: relative; width: 1.635em; height: 0px;"><span style="position: absolute; clip: rect(3.401em, 1000.7em, 4.176em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-150" style="font-family: STIXGeneral; font-style: italic;">m</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.722em;"><span class="texatom" id="MathJax-Span-151"><span class="mrow" id="MathJax-Span-152"><span class="mo" id="MathJax-Span-153" style="font-size: 70.7%; font-family: STIXGeneral;">−</span><span class="mn" id="MathJax-Span-154" style="font-size: 70.7%; font-family: STIXGeneral;">2</span></span></span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.543em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.095em; border-left: 0px solid; width: 0px; height: 1.277em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>1370</mn><mspace width="thinmathspace"></mspace><mi>W</mi><msup><mi>m</mi><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-9">=1370\,Wm^{-2}</script></p>
+<hr>
+
+<p><br></p>
+<center><h2> Observing Planet</h2></center>
+<h3>Transit</h3>
+<p>Planet moving over solar disk. It happens only for Mercury and Venus<br></p>
+<h3>Occulation</h3>
+<p>Moon/Planets Eclipsing distant object is known as occulation<br></p>
+<h3>Retrograde Motion</h3>
+<p>Planet appears moving in opposite direction<br></p>
+<h3> Other Terms</h3>
+
+<p ><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Positional_astronomy.svg/2000px-Positional_astronomy.svg.png" class="image-popup"><img style="padding-left: 20%;" width=70%  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Positional_astronomy.svg/2000px-Positional_astronomy.svg.png"></a><br></p>
+
+<p><br><b>Inferior Planet</b> - Has an orbit that is closer than the Earth-Sun distance. (Mercury and Venus)
+<br><br>
+<b>Superior Planet</b> - Has an orbit that is farther than the Earth-Sun distance. (Mars, Jupiter, Saturn, Uranus, Neptune)
+<br><br>
+<b>Opposition</b> - A planetary position in which the Sun, the Earth and a superior planet are aligned in that order and in a straight line.
+This is also the best time to observe a planet because:
+<br>&nbsp;&nbsp;  • it is at its closest approach to Earth.
+<br>&nbsp;&nbsp;  • the planet rises just as the Sun is setting, allowing observation any time during the night.
+<br><br>
+<b>Quadrature</b> - A planetary position in which the Sun, the Earth and a superior planet form a right angle with the Earth at the vertex.<br>
+At sunset during eastern quadrature, a superior planet is overhead and is overhead at sunrise during western quadrature.
+<br><br>
+<b>Conjunction</b> - A planetary position in which the Earth, the Sun and the planet are aligned in that order and in a straight line.<br>
+For an inferior planet this is called a superior conjunction.<br>
+When the order is the Earth, the inferior planet and the Sun, it is an inferior conjunction.<br>
+A conjunction is the worst time to observe a planet because it is lost in the Sun’s brilliance.
+<br><br>
+<b>Greatest Elongation</b> - Point at which an inferior planet has the greatest visual distance from the Sun. (Mercury 28º   Venus 47º)<br>
+During Greatest Eastern Elongation an inferior planet is visible at sunset and is visible before sunrise during Greatest Western Elongation.
+<br><br></p>
+<h3> Retrograde Motion</h3>
+<p>Retrograde motion is the apparent motion of a planet in a direction opposite to that of other bodies within its system, as observed from a particular vantage point. Direct motion or prograde motion is motion in the same direction as other bodies.</p>
+<center> <b> Retrograde Motion of Mars </b>
+<br><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Apparent_retrograde_motion_of_Mars_in_2003.gif/250px-Apparent_retrograde_motion_of_Mars_in_2003.gif" class="image-popup"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Apparent_retrograde_motion_of_Mars_in_2003.gif/250px-Apparent_retrograde_motion_of_Mars_in_2003.gif"></a></center>
+<p><br><br></p>
+<h4> Reason for Apparent Retrograde Motion</h4>
+<center><a href="http://homework.uoregon.edu/pub/class/301/rr1.gif" class="image-popup"><img src="http://homework.uoregon.edu/pub/class/301/rr1.gif"></a></center>
+<p><br><br></p>
+<hr>
+
+<center><h2> Quantifying Brightness of stars</h2></center>
+<h3>Apparent Magnitude</h3>
+<p>As it appears from earth
+[m=-2.5\log{\left(\frac{flux_{object}}{flux_{reference}}\right)}]
+[m_1-m_2=-2.5\log{\left(\frac{f_1}{f_2}\right)}]
+<br><b>Note:</b> Magnitude Value increases Brightness of star decreases.
+<br>Our eyes are limited to a magnitude 6 stars.<br></p>
+<center><a href="http://www.astronomynotes.com/starprop/appmag.gif" class="image-popup"><img src="http://www.astronomynotes.com/starprop/appmag.gif"></a></center>
+<center><h3>List of 50 brightest stars</h3>
+<a href="https://doc-04-10-docs.googleusercontent.com/docs/securesc/kcean16dv49vndcbfjbh2tso553lmbpg/0c34ug2d8ne5lrsk156ha17qbvfhccf6/1469383200000/15062252872031255528/15062252872031255528/0ByLMXYV6_rjNNDN5SFh3dkFHMDg?e=view&amp;nonce=tr03ii8sl1nbu&amp;user=15062252872031255528&amp;hash=tv8bnavqi3htebdru0nnnj9rca1amgu4"><img src="https://doc-04-10-docs.googleusercontent.com/docs/securesc/kcean16dv49vndcbfjbh2tso553lmbpg/0c34ug2d8ne5lrsk156ha17qbvfhccf6/1469383200000/15062252872031255528/15062252872031255528/0ByLMXYV6_rjNNDN5SFh3dkFHMDg?e=view&amp;nonce=tr03ii8sl1nbu&amp;user=15062252872031255528&amp;hash=tv8bnavqi3htebdru0nnnj9rca1amgu4">List</a></center>
+
+<p><br></p>
+<h3> Surface Brightness</h3>
+<p>It is magnitude of brightness of extended object
+[s=m+2.5\log{A}][A\rightarrow area\,in\,arcsec^2]
+<br>&lt;h3&gt;Absolute Magnitude&lt;/h3&gt;<br>
+all stars considered at 10pc [M=m+5-5\log{D}][D\rightarrow distance\,between\,star\,and\,earth]
+for planets distance is considered to be 1 A.U.
+<br><br></p>
+<hr>
+
+<center><h2>Some other terms</h2></center>
+<p><b>Never setting stars or Circumpolar stars</b> These are those stars which never go below horizon<br>
+<b>Never rising stars</b> Theses stars never rise<br><br><br><br></p>
+<center><figure><a href="http://www.imsc.res.in/~indu/JM/2009/JanFeb/Solstice/chap02_files/risefall.gif" class="image-popup">&lt;<img src="{% static 'home/krittika_resources/Basics_of_astro/track.gif' %}"></a></figure>
+<br>
+<br><a href="http://www.lcsd.gov.hk/CE/Museum/Space/archive/EducationResource/Universe/framed_e/lecture/ch02/imgs/track.gif" class="image-popup"><img src="http://www.lcsd.gov.hk/CE/Museum/Space/archive/EducationResource/Universe/framed_e/lecture/ch02/imgs/track.gif"></a></center>
+<p><br></p>
+
+                <div class="entry-meta">
+                <br>
+<hr>
+<span class="entry-tags"></span>
+<!--
+<span class="social-share">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://stab-iitb.org/krittika/Basics/" title="Share on Facebook" class="tag">
+        <span class="term"><i class="fa fa-facebook-square"></i> Like</span>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text=https://stab-iitb.org/krittika/Basics/" title="Share on Twitter" class="tag">
+        <span class="term"><i class="fa fa-twitter-square"></i> Tweet</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https://stab-iitb.org/krittika/Basics/" title="Share on Google+" class="tag">
+            <span class="term"><i class="fa fa-google-plus-square"></i> +1</span>
+    </a>
+</span> --> 
+<div style="clear:both"></div>
+
+                </div>
+            </div>
+ </div>
+ </div>
+ </div>
+
+
+{% endblock %}

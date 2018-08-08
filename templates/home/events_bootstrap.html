@@ -1,0 +1,751 @@
+{% extends "home/total.html" %}
+<!-- navigation buttons part -->
+{% load static %}
+<!-- modal part -->
+{% block body %}
+<div id="login" class="modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+
+        <form>
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" class="form-control" id="name">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+   <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="signup" class=" signup modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">SIGN-UP</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+       <form>
+ <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id='name' >
+  </div>
+ <div class="form-group">
+    <label for="user">Username:</label>
+    <input type="text" class="form-control" id='user' >
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+   <div class="form-group">
+    <label for="number">Phone-number:</label>
+    <input type="number" class="form-control" id='number' >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Sign-Up</button>
+</form>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal part -->
+<!-- adjusting-nav background -->
+<div class="container-fluid" style="height:56px;width:100%;">
+</div>
+<!--
+<div class='container-fluid w3-animate-zoom'>
+<h2>Vision</h2>
+<p> Sky has been one of the first curious things in our childhood. 
+The first question of every child looking up at the sky are
+ "Why does the moon walk along with me? Why do some stars twinkle while others don't? 
+Why is their a Rabbit on the moon?" and a lot more. You are lying if you don't admit that you haven't 
+thought of being an Astronaut on growing up at one point or other of your childhood. But then comes the 
+schooling and the cut-throat competition of life and we forget the wonders of the sky. 
+Krittika is a place where you can revive the child in you and look up at the sky. 
+Its a group of astronomy enthusiasts who admire the vastness of the sky, the Sun, the planets, the moon, 
+the stars, the galaxies and a lot more. Our vision is threefold:
+</p>
+</div> -->
+<section id='upcoming-event' style='margin:1em 0;'>
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 0;">
+<div class='container-fluid w3-animate-zoom' id='previous-events'>
+ <h2>Upcoming Events</h2>
+ <hr/>
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#post1">Details</a></li>
+   <li><a data-toggle="tab" href="#post2">Teaser :P</a></li>
+</ul>
+
+
+<div class="tab-content">
+  <div id="post1" class="tab-pane fade in active">
+    <h3>Event</h3>
+    <p>Details of event(happened on and where)</p>
+    <div class='container'>
+    <img class='img-responsive' src='#' alt='poster of the event'/>
+    </div>
+  </div>
+  <div id="post2" class="tab-pane fade">
+    <h3>Teaser</h3>
+    <p>This will increase your appetite for the event :p</p>
+    <div>
+    <img src='#' alt='depending on the style you require'>
+    <p>Here goes the description of the event.<br/>
+       Some video or some stuff regaring the event </p>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id='recent-event' style='margin:1em 0;'>
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 0;">
+<div class='container-fluid w3-animate-zoom' id='previous-events'>
+ <h2>Recent Event</h2>
+ <hr/>
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#poster">Glimpse</a></li>
+  <li><a data-toggle="tab" href="#minutes">minutes</a></li>
+  <li><a data-toggle="tab" href="#moments">moments</a></li>
+  <li><a data-toggle="tab" href="#References">References</a></li>
+</ul>
+
+
+<div class="tab-content">
+  <div id="poster" class="tab-pane fade in active">
+    <h3>Event</h3>
+    <p>Details of event(happened on and where)</p>
+    <div class='container'>
+    <img class='img-responsive' src='#' alt='poster of the event'/>
+    </div>
+  </div>
+  <div id="moments" class="tab-pane fade">
+    <h3>Photos</h3>
+    <p>We caught you in our little camera!</p>
+    <div>
+    <img src='#' alt='depending on the style you require'>
+    <p>Here goes the photos of the event.<br/>
+       Decide the style for this , from souvenir page </p>
+    </div>
+  </div>
+  <div id="minutes" class="tab-pane fade">
+    <h3>Points to ponder</h3>
+    <p>below goes some important notes regarding the event</p>
+    <article>
+       <header>
+          heading for the article
+       </header>
+      <p>Some points to note</p>
+    </article>
+  </div>
+  <div id="References" class="tab-pane fade">
+    <h3>check this out</h3>
+  <ul>
+    <li><a href='#'>link1</a></li>
+    <li><a href='#'>link2</a></li>
+    <li><a href='#'>link3</a></li>
+ </ul>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id='previous-events w3-animate-zoom' style='margin:5em 0;'>
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 0;">
+<div class='container-fluid' id='previous-events'>
+ <h2>Previous Events</h2>
+ <hr/>
+<ul class="nav nav-pills">
+  <li class="active"><a data-toggle="tab" href="#Lecture">Lectures</a></li>
+  <li><a data-toggle="tab" href="#Documentary">Documentary</a></li>
+  <li><a data-toggle="tab" href="#Observations">Observations</a></li>
+  <li><a data-toggle="tab" href="#trips">trips</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="Lecture" class="tab-pane fade in">
+    <h3>INTERESTING LECTURES</h3>
+    <p>To know more about them click on the lecture</p>
+    <div class="container-fluid">
+  
+  <div class="panel-group" id="accordion"  style="border-style: none;padding: 1%;margin: -1%;" >
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#sun">Sun</a>
+        </h4>
+      </div>
+      <div id="sun" class="panel-collapse collapse ">
+        <div class="panel-body">   
+        <h2 style="text-align: center;">Sun</h2>
+        <p style="text-indent:8%;text-align:justify;">
+The center of our solar system and the source of all light and energy here on earth. Well, this much of info is enough to pick up the most celebrated star in our entire Universe.</br></hr>
+The Sun, the most famous star, among the only known intelligent species of the universe and  SOL-ely supporting many species found on the only known habitable planet to the mankind has been a key feature of all Astronomical discussions.</hr>
+Sun, being the nearest, is most extensively studied star. Almost all known theories of stellar structure and evolution have been proposed and tested through detailed study of its properties. Yet there remains a lot of things unknown. Being the nearest and the only resolvable star, the sun helps us to understand the properties of stars in much detail and hence studying Sun has been crucial for Astrophysics.
+Our lecturer Vivek Arte started with some discussions of earlier predicted age of the sun. Then he deeply explained different layers/zones of the sun. He further explained about sun spots, solar flares, corona.<br>
+There was also a brief discussion on "Sun spots" which are at present key source of oue knowledge about the Sun.
+Sun spots are areas of reduced surface temperature.Sunspots usually appear in pairs of opposite magnetic polarity. Their number varies according to the approximately 11-year solar cycle. Due to differential rotation and convection, the magnetic fields get twisted, breaking off at a point to make sun spots. Convection is inhibited at these points; the energy flux from the Sun's interior decreases; and with it surface temperature.</br></hr>
+Coronal mass ejection are due to major alterations in the sun’s magnetic field.</hr>
+Here are the <--a href="https://drive.google.com/open?id=0ByLMXYV6_rjNZVROc0FvZW91MzA"-->slides<--/a--> used in the lecture.</p>
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect1">Coordinate System</a>
+        </h4>
+      </div>
+      <div id="lect1" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Coordinate System</h2> 
+        <p style="text-indent:8%;text-align:justify;">
+How will you communicate the position of a star to a friend or the position of the celestial body can be defined, how to convert the coordinates from one system to other and a lot more. Or how to know when will you will be able to know when your favorite star rises. This gives a feel of how rotation of earth generates such wonders. </br></hr>
+You can get the <center> <a href="{% static 'home/events/Coordinate Systems2.pdf' %}">slides</a></center> here.</br>
+
+Our discussion on "Coordinate Systems" started with description of coordinate systems in astronomy and we discussed 4 types of it. Later on, there was discussion on different types of days, years, time. Briefly Spherical trigonometry was covered along with conversion of coordinates. Finally, session ended with discussion on Sun's analemma.</br></p>
+ 
+.pdf' 
+      </div>
+    </div>
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect3">History of mathematical astronomy</a>
+        </h4>
+      </div>
+      <div id="lect3" class="panel-collapse collapse ">
+        <div class="panel-body">  
+
+ <h2 style="text-align: center;">History of mathematical astronomy</h2>
+<p style="text-indent:8%;text-align:justify;">
+Today we have reached to the end of our solar system, we have been searching for life millions of light-years away, not just landing but organizing a race to the moon. Those satellites(GPS, forecasts  and blah blah..) present in space  are affecting us in such a way that we can't think about our life without Astronomy.</br></hr>
+But how we have reached this far?</br>
+And all this wouldnt have been possible without origins of astronomy ingrained with mathematics. Mathematics has often provided us key insights into the way various sciences function and Astronomy isn't an exception to this.
+In the lecture, Kumar Ayush took the audience on a great expedition of "History of Mathematical Astronomy" and made the audience think how it felt back then when the earth was flat.</p>
+
+ 
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect4">Cosmic Distance Ladder</a>
+        </h4>
+      </div>
+      <div id="lect4" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Cosmic Distance Ladder</h2> 
+        <p style="text-indent:8%;text-align:justify;">
+For ages our obsession with the heavens means that we can measure distances with greater rigour and precision, from gnomons and sundials to standard candles and gravitational lensing; such are the rungs of the cosmic distance ladder. 
+Its is a hierarchy of rather clever (yet surprisingly elementary) mathematical methods that astronomers use to indirectly measure very large distances, such as the distance to planets, nearby stars, or distant stars.It’s a great testament to the power of indirect measurement, and to the use of mathematics to cleverly augment observation.
+Each rung of the ladder provides information that can be used to determine the distances at the next higher rung.
+So in the lecture on cosmic distance ladder Alankar discussed the various methods used for calculting distances starting from distances within our solar system. The primary unit used for them is Astronomical Unit or AU, which is equal to the distance between earth and sun.
+Distances within solar system can be measured using direct measurement, kepler's laws and parallax method.
+Astronomical unit can be measured using venus transits.
+Within solar system, using baselines on earth, distances can be measured using parallax method. The earth-sun mean distance provides scale for fundamental baseline from which we can step outside solar system. It enables us to measure the distances of nearer stars by measuring their parallax after six months using distant stars as background.
+The smallest parallax that can be measured depends on resolving power of the largest telescopes, and this limits us to stars closer than about 30 pc.</br></hr>
+
+Going higher up the ladder, distances can be measured using velocity measurements. Velocities can be resolved in two components-radial and transverse. Radial velocities can be easily measured using doppler shifts. Now transverse velocity, Vt=Dw where D is the distance and w the angular velocity. This w can be measured directly. But these information are not sufficient to determine D, except in two special cases-
+1. For cluster of stars-In a cluster, all stars have approximately the same velocity and this parallel motion can be recognised by the convergence of proper motions on a point(direction) in sky. The angle between this direction and line of sight to cluster is ratio of radial velocity component and velocity which gives us the distance.
+2. Statistical parallax-In second limiting case, it is assumed that group of stars have random motion and it is isotropic and therefore (2*(Vr)^2)average = ((Vt)^2)average, otherwise we would be in a privileged position relative to group. From here we can get distance.
+These methods take us out to several 100 pc but still within our galaxy.</br>
+
+Higher up, distances measured from apparent luminosity-
+From relation between absolute and apparent luminosities, D can be found out. Now apparent luminosity can be measured and for some special objects absolute luminosity is approximately known. These are called standard candles.
+These luminosities are measured on a logarithmic scale where 'm' is the apparent magnitude and 'M' is the absolute magnitude defined as apparent magnitude that object would have at a distance of 10 pc. We have some knowledge of M for some classes of objects-main sequence stars, cepheid variables, novae and brightest galaxies in clusters.</br>
+
+1. Main sequence - In 1910, from nearby stars distances, Hertzsprung and Russell found M and spectral type for many stars are strongly correlated. Thus if we know a star is main sequence then from it's m and spectral class measurement, M can be obtained and hence D.</br>
+2. Cepheid variables - Many stars vary regularly in brightness with period P. It was found by Leavitt in 1912, M and P are related for these stars and since stars with same M have same P, then these can be employed as standard candles. This relation is caliberated using distances smaller in hierarchy and then can be used to measure distances upto about 10^6 pc i.e. within local cluster of galaxies.</br>
+3. Type 1A supernova - When in a binary system, one star is a white dwarf and other a massive star, white dwarf begins to get more mass and after a limit it collapses resulting in supernova of characteristic brightness. Thus can be employed as standard candles.</br>
+
+Extreme distances on cosmological scales can be measured using Hubble law i.e. distance and velocity are linearly related by hubble constant H.
+
+Here are the <a href="{% static 'home/events/CosmicDistanceLadder.pdf' %}">slides</a> used in the lecture.</p>
+ 
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect5">Amateur Astronomy</a>
+        </h4>
+      </div>
+      <div id="lect5" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Amateur Astronomy</h2> 
+        <p style="text-indent:8%;text-align:justify;">
+While professional astronomers are busy making new theories for Astronomy. Some amateur astronomers playing with their telescope captured an asteroid colliding with Jupiter.</br></hr>
+Astronomy is a branch known for respecting its amateurs because Astronomy is full of uncertain events,theorist aren't the one who can predict when would star explode or the new comet would show up in solar system. It was the Amateur astronomers observing the different parts of the sky from different parts of the world have discovered some of the prominent novae, comets.</br>
+<--a href="https://drive.google.com/open?id=1R-mkiYJS7H2jOZhMEBF6ieAKEoHnjVyQ34XyCnNLjWE"-->The discoveries of Uranus and Neptupe <--/a-->are an excellent example of the works of amateur astronomers. Ranging from small rocks, comets to nebulae and galaxies, the known objects of universe are full of wonders discovered by star gazers who just do it for the fun of it.</br></hr>
+The development of telescopes in various wavelenghts other than visible has opened new horizons for these nightsky explorers.
+So what are the tools you have as amateur?</hr>
+Most of the research begins with a crazy idea and many times no complex calculation or simulation can give you the 'right' answer. So having a rough estimate gves you pointers. Here comes the time for some back-of-the envelop calculation. Guess the numbers, tinker with geometry, check the plausibilty and you are good to go. Start contributing!</br></hr>
+Here is a <--a href="https://drive.google.com/open?id=0ByLMXYV6_rjNeWtGNm5kUHVLdDQ"-->link<--/a--> to the slides used in the lecture.</p>
+  
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect6">Celestial mechanics</a>
+        </h4>
+      </div>
+      <div id="lect6" class="panel-collapse collapse ">
+        <div class="panel-body">  
+        <h2 style="text-align: center;">Celestial mechanics</h2> 
+        <p style="text-indent:8%;text-align:justify;">
+ "Ever since celestial mechanics in the skillful hands of Leverrier and Adams led to the world-amazed discovery of Neptune, a belief has existed begotten of that success that still other planets lay beyond, only waiting to be found."</hr>
+This statement by Percival Lowell beautifully sums up the contributions made by Celestial Mechanics in giving wings to our conquest of hidden truths of the Universe.</hr>
+Celestial mechanics is the branch of astronomy that deals with the motions of celestial objects. Historically, celestial mechanics applies principles of physics (classical mechanics) to astronomical objects, such as stars and planets, to produce ephemeris data.
+In the lecture on "Celestial Mechanics", Sandesh Kalantre beautifully presented from earlier thinking of epicyclic model to the and its decline. He then moved on deriving Three Kepler's Law and explained how Kepler them from Tycho Brahe's data. Then he completely solved 2 body problem. There was also a broef discussion on 3 body problem and the beautiful concept of Lagrangian points.
+Finally the lecture concluded with the discussion of general N body problem.</br>
+For those who are interested,here are the <a href="{% static 'home/events/Celestial-Mechanics_2016.pdf' %}" >resources</a> used in the lecture.</p>
+ 
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect7">Cosmology</a>
+        </h4>
+      </div>
+      <div id="lect7" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Cosmology</h2>   
+        <p style="text-indent:8%;text-align:justify;">
+For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring.” This statement from legendary Carl Sagan aptly sums up our desire for demystifying the secrets of the Universe in which we live in rather than being content with our present knowledge and picture of it.</br>
+
+Well, one of the most pressing questions in cosmology is regarding the origin of the Universe.</hr>
+ How did the universe get its start?</hr> 
+In the beginning, there was....well,we don't really know. When we hear the term "Big Bang", it brings to mind an inconceivably dense collection of material that suddenly exploded in space. However, when the universe was born, there was no space, no vacuum. There was no time either. There was literally nothing.</br></hr>
+Then the Universe was born and the rest is history.</hr>
+In the lecture on Cosmology, we discussed some key developments in the field of cosmology which tried to answer these crucial questions regarding the past, present and future of the Universe. We also explored the basic principles guiding the universe right from its birth. 
+We started with earlier theories and later on Pavan also threw light on the latest theories by applying them to simple cosmological models.There was also a brief discussion regarding Dark matter and energies whose existence have provided crucial breakthroughs to Astrophysicists in understanding our Universe. Infact, the discussion reached its climax when Pavan talked about CMBR(Cosmic Microwave Background Radiation), the first light in the Universe.</br>
+</hr>Finally, the lecture concluded with the discussion of the Horizon problem and the Flatness problem.</hr>
+Here are the <a href="{% static 'home/events/Coordinate Systems2.pdf' %}">slides</a> 
+used in the lecture.</p>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="pics/cosmos.pdf"   width=100%   ></iframe>
+  </div>
+       </div>
+       </div>
+       </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect8">Stellar Structure</a>
+        </h4>
+      </div>
+      <div id="lect8" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Stellar Structure</h2> 
+        <p style="text-indent:8%;text-align:justify;">
+"Learn about ourselves because we are 93% stardust."</hr>
+Have you got a chance to enjoy the beautiful stars in the sky and got amazed how one appears to be different than the other. Some appear whiter some appear to have reddish tinge. Some change their brightness everyday. Not only these little 'big' twinkling wonders vary from each other in their size, radius and even their formation and death.</br></hr>
+In the lecture on Stellar Structure and Evolution, Sheshansh Aggarwal beautifully elaborated the structure of various kinds of stars. The lecture initially commenced with the very definition of a star and then slowly moved on towards structure of stars and factors governing them. Sheshansh also introduced the audience to the concept of HR Diagrams.Finally the lecture concluded with a brief discussion on the Evolution of various types of stars and their expected fate after their deaths.</br></hr>
+Here are the <a href=""> resources </a> used in the lecture.</p>
+  
+</div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion" href="#lect9">Deep sky Observation</a>
+        </h4>
+      </div>
+      <div id="lect9" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <h2 style="text-align: center;">Deep sky Observation</h2>  
+        <p style="text-indent:8%;text-align:justify;">
+ The lecture on 'Deep Sky Observation' marked the beginning of the phase of sky observation.
+This lecture was taken by Renuka Khanvilkar and Satish Shirodkar of Proxima - Astronomy Club. They discussed about various messiers,
+deep sky objects that can be observed through mumbai sky finally ending with a brief telescope handling session and basics of telescope.</br></p>
+ 
+</div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+
+  </div>
+  <div id="Documentary" class="tab-pane fade">
+    <h3>Journey Towards universe </h3>
+    <p>We Had a virtual journey into them</p>
+    <div class="container-fluid">
+  
+  <div class="panel-group" id="accordion1"  style="border-style: none;padding: 1%;margin: -1%;" >
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion1" href="#BBB">Beyond Big Bang</a>
+        </h4>
+      </div>
+      <div id="BBB" class="panel-collapse collapse ">
+        <div class="panel-body">   
+        <p style="text-indent:8%;text-align:justify;">
+We all know that it all started with a big bang. But what was there beyond big bang.</br>
+Witness an amazing journey of a look back in time billions and billions of years to the origin of the Big Bang. Leading physicists and historians theorize what happened before the bang occurred, how the physical nature of the universe unfolded as energy became matter forming stars and galaxies, and how the universe continues to expand outward at an ever-accelerating rate.</br></p>
+
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion1" href="#BH">Black Hole</a>
+        </h4>
+      </div>
+      <div id="BH" class="panel-collapse collapse ">
+        <div class="panel-body"> 
+        <p style="text-indent:8%;text-align:justify;">
+
+Black holes are the seductive dragons of the universe, outwardly quiescent yet violent at the heart, uncanny, hostile, primeval, emitting a negative radiance that draws all toward them, gobbling up all who come too close.Black holes, which have no memory, are said to contain the earliest memories of the universe, and the most recent, too, while at the same time obliterating all memory by obliterating all it's embodiment. Such paradoxes characterize these strange galactic monsters, for whom creation is destruction, death life, chaos order.
+These galactic monsters kill us, and in a variety of interesting and gruesome ways. But, all in all, we may owe our very existence to them.
+</br><p>
+  
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion1" href="#SN">Supernovae</a>
+        </h4>
+      </div>
+      <div id="SN" class="panel-collapse collapse ">
+        <div class="panel-body">   
+        <p style="text-indent:8%;text-align:justify;">
+
+
+Supernova explosions, death of the stars, can set off the creation of new stars. Without these supernova explosions, there are no mist-covered swamps, computer chips, trilobites, Mozart or the tears of a little girl. Without exploding stars, perhaps there could be a heaven, but there is certainly no Earth. </br></hr>
+" These beautiful deaths of our stars" are reason for our life.</p>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+  </div>
+  <div id="Observations" class="tab-pane fade">
+    <h3>Star Gazing!!!</h3>
+    <p>We will start this events once the monsoon is done</p>
+        <div class="container-fluid">
+  
+  <div class="panel-group" id="accordion2"  style="border-style: none;padding: 1%;margin: -1% ;" >
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion2" href="#star">Star Gazing Sessions</a>
+        </h4>
+      </div>
+      <div id="star" class="panel-collapse collapse  active">
+        <div class="panel-body">   
+          <p style="text-indent:8%;text-align:justify;">
+
+
+Here are the details of some major Stargazing Sessions organized by Krittika in 2106-2017.</br>
+ 
+INSTITUTE STARGAZING SESSIONS</br>
+
+1. Night Watch (Winter Sky) (29-30 Oct 2016):Overnight star watch session for observing the winter sky. Skywatch was till 4 AM in the morning.</br>
+
+2. Telescope Handling Workshop (20-21 Jan 2017): ?This event was just after Deep sky observation lecture. For this event we had 7 extra telescopes along with our equatorial, dobsonian and cassegrain telescope. Satish Shirodkar sir guided throughout the session making first people to be able to use telescope and then observe some beautiful deep sky objects. Session continued till 5:30 in the morning.</br>
+
+
+HOSTEL STARGAZING SESSIONS</br>
+
+ Stargazing session were conducted in these hostels to prepare people for GC on following dates.</br>
+Hostel 15-16: 22. Oct. 2016</br>
+Hostel 4: 6. Jan. 2017</br>
+Hostel 10: 13. Jan. 2017</br>
+Hostel 6: 14. Jan. 2017</br>
+Hostel 7: 21. Jan. 2017</br>
+Hostel 9: 4. Feb. 2017</br>
+Hostel 5: 10. Feb. 2017</br>
+Hostel 4 (Comet 45P): 11. Feb. 2017 (4 AM)</br>
+Hostel 3: 11. Feb. 2017</br>
+Hostel 8: 7. Mar. 2017</br></p>
+
+        </div>
+      </div>
+    </div>
+     </div>
+</div>
+  </div>
+  <div id="trips" class="tab-pane fade in ">
+    <h3>MUST VISIT</h3>
+    <p>Let's What it has</p>
+        <div class="container-fluid">
+  
+  <div class="panel-group" id="accordion3"  style="border-style: none;padding: 1%;margin: -1%;" >
+    <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion3" href="#GMRT">GMRT </a>
+        </h4>
+      </div>
+      <div id="GMRT" class="panel-collapse collapse ">
+        <div class="panel-body">  
+        <p style="text-indent:8%;text-align:justify;">
+Giant Meter Wave Radio Telescope, Pune, set up by  National Centre for Radio Astrophysics, an affiliate of the Tata Institute of Fundamental Research (TIFR),is one of the most sensitive telescopes in the world (within its range), the GMRT has an effective diameter of 25 kilometres and is made of 30 smaller dish antennas.</br></hr>
+Operating in the low radio frequencies, it has been extensively used by radio astronomers to study different objects in the Milky Way and also the content, structure and nature of gases in external galaxies.
+A visit to this unique radio telescope was organised by Krittika, introducing visitors to the basics of radio astronomy and a star-party in the clear skies of khodad, located remotely 80 kms north of Pune. </br>
+<figure>
+<center><img src="{% static 'home/pics/GMRT/GMRT6.jpg' %}"></center>
+</figure>
+
+It was a 2 day trip to GMRT in Naraingaon, Khodad for 4th and 5th March 2016. GMRT is the largest wavelength operating Radio telescope in world and has patents for technology used in its dish. GMRT's main tower being in village offers a very clear night sky. So, on the first day of trip there was an overnight skywatching session at GMRT field. Satish Shirodkar sir accompanied us for the trip and guided through the overnight session. In this sky-watch we trained people to use a sky-map for Messier Objects or Deep Sky Objects in the sky. There was a list of around 30 Messier Object that people put in the sky using the telescope over the whole night. The following morning an executive of GMRT showed us the GMRT main office it's working. He showed one of the dish that was the part of this Giant
+Radio Telescope.</br></hr> He later took us to the control room in the main building of GMRT.Finally, the trip concluded with a short solar observation session.</hr></p>
+
+ 
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default"  style="border-style: none;">
+      <div class="panel-heading" style="background-color: transparent;" >
+        <h4 class="panel-title" >
+          <a data-toggle="collapse" data-parent="#accordion3" href="#planet">Planetarium</a>
+        </h4>
+      </div>
+      <div id="planet" class="panel-collapse collapse ">
+        <div class="panel-body">  
+        <p style="text-indent:8%;text-align:justify;">
+ Nehru Planetarium is a prominent science and space centre, which attracts plenty of curious space aspiring students.
+ It is immensely popular among scientists and scholars meeting for discussions and lectures, on various stellar and Astronomical events.
+ Established in 1977 and inaugurated by the then Prime Minister, Indira Gandhi, the palnetarium is a dome-shaped building that houses an art gallery, restaurant, library and a cultural center.
+ Krittika, The Astronomy club, IIT Bombay conducts a visit to the planetarium every year in autumn semester. </br></hr>
+
+ <figure class="half">
+<center>
+<img src="{% static 'home/pics/Nehru Planetarium/Nehru-Planetarium.jpg' %}">
+<img src="{% static 'home/events/pics/pics/pics/Skytheatre.jpg' %}">
+</center>
+</figure>
+ 
+<center>
+<iframe src="Skytheatre.jpg" width="680" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+</center>
+
+In the recently organized trip on 2016-09-17,around 40 people enjoyed the trip to Nehru Planetarium and Nehru Science Centre. Trip had a duration ofabout 8 hrs. In the first leg of trip people enjoyed Nehru Science Centre consisting science related models and amusements. In NSC people enjoyed the movie on dome. Nehru Science Centre introduced for the first time Science on Sphere. In the show people were shown various planet surfaces and their moons. In the second half of the trip there was a show at Nehru Planetarium running for about 1.5-2 hrs. After the movie people enjoyed at Nehru Museum as the last leg of the trip.</br></p>
+
+ 
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--
+<div class='container-fluid w3-animate-zoom' style='margin:5em 0;'>
+ <h2>RECENT EVENT</h2>
+<hr/>
+ <div id='accordion'>
+   <div>
+   <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+  
+   <div id="collapse1" class="collapse ">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+     </div>
+  </div>
+  <div>
+  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+  <div id="collapse2" class="collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  <div>
+  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+  <div id="collapse3" class="collapse ">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+ </div>
+
+</div>
+
+<section style='margin:5em 0;'>
+  <div class="row">
+    </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="pics/Amateur1.jpg">
+        <img src="pics/Amateur1.jpg" alt="Lights" style="width:100%">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Collapsible Group 3</a>
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="pics/Amateur1.jpg">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        Collapsible Group 3</a>
+        <img src="pics/Amateur1.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="pics/Amateur1.jpg">
+        <img src="pics/Amateur1.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</section >
+
+<section style='margin:5em 0;'>
+  <div class="container">
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=0sfpdd57eggmra3qt2unr1ia70%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=Asia%2FCalcutta" 
+      style="border-width:0" width="100%"  frameborder="0" scrolling="no"></iframe>
+    </div>g
+  </div>
+</section>
+
+
+<div class="container-fluid w3-animate-zoom">
+<h2>Previous Events</h2>
+<div class="container">
+  <h2 >Event name</h2>
+  <p>some interesting stuff</p>
+ 
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">know more</button>
+  <div id="demo" class="collapse">
+  <img src='pics/Amateur1.jpg' 
+ width='100%' height='auto' class="btn btn-info" data-toggle="collapse" data-target="#demo"/>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"> <span> event description </span></button>
+ </div>
+ <div id="demo1" class="collapse">
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+  <!-- Indicators -->
+  <!--
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol> -->
+
+  <!-- Wrapper for slides -->
+  <!--
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="pics/Amateur1.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="pics/Amateur1.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="pics/Amateur1.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+</div> 
+</div> -->
+
+
+
+{% endblock %}

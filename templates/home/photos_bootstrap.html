@@ -1,0 +1,776 @@
+{% extends "home/total.html" %}
+
+<!-- navigation buttons part -->
+{% load static %}
+<!-- modal part -->
+{% block body %}
+<div id="login" class="modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+
+        <form>
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" class="form-control" id="name">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+   <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="signup" class=" signup modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">SIGN-UP</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+       <form>
+ <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id='name' >
+  </div>
+ <div class="form-group">
+    <label for="user">Username:</label>
+    <input type="text" class="form-control" id='user' >
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+   <div class="form-group">
+    <label for="number">Phone-number:</label>
+    <input type="number" class="form-control" id='number' >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Sign-Up</button>
+</form>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal part -->
+<!-- adjusting-nav background -->
+<div class="container-fluid" style="height:56px;width:100%;">
+</div>
+
+<section id='previous-events'>
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 0;">
+<div class='container-fluid' id='previous-events'>
+ <h2>Event wise Photos</h2>
+ <hr/>
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#Lecture">Lecture</a></li>
+  <li><a data-toggle="tab" href="#Documentary">Documentary</a></li>
+  <li><a data-toggle="tab" href="#Observations">Observations</a></li>
+  <li><a data-toggle="tab" href="#trips">trips</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="Lecture" class="tab-pane fade in active">
+    <h3>Lecture related event photos</h3>
+    <p>
+
+<h2> Sun </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Sun/Sun1.JPG' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Sun</h3>
+        <p>The brightest star on sky!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src={% static 'home/pics/Sun/Sun3.JPG' %} alt="Sun">
+      <div class="carousel-caption">
+       <h3>Sun</h3>
+        <p>The brightest star on sky!</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src={% static 'home/pics/Sun/Sun5.JPG' %} alt="Sun">
+      <div class="carousel-caption">
+        <h3>Sun</h3>
+        <p>The brightest star on sky!</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+  <h2> Stellar Structure </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel1" data-slide-to="1"></li>
+    <li data-target="#myCarousel1" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Stellar/Stellar1.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Stellar Structure</h3>
+        <p>Internal structure of a star</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Stellar/Stellar2.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Stellar Structure</h3>
+        <p>Internal structure of a star</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/Stellar/Stellar3.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Stellar Structure</h3>
+        <p>Internal structure of a star</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> History</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel2" data-slide-to="1"></li>
+    <li data-target="#myCarousel2" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Stellar/Stellar.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>History</h3>
+        <p>History of Astronomy</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Stellar/Stellar.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>History</h3>
+        <p>History of Astronomy</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/Stellar/Stellar.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>History</h3>
+        <p>History of Astronomy</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Cosmic Distance Ladder</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel3" data-slide-to="1"></li>
+    <li data-target="#myCarousel3" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/CosmicDistance/CosmicDistance2.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Distance Ladder</h3>
+        <p>How distances are measured in Astronomy</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/CosmicDistance/CosmicDistance5.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Distance Ladder</h3>
+        <p>How distances are measured in Astronomy</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/CosmicDistance/CosmicDistance8.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Distance Ladder</h3>
+        <p>How distances are measured in Astronomy</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Deep Sky Observation</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel4" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel4" data-slide-to="1"></li>
+    <li data-target="#myCarousel4" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="pics/Stellar.jpg" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Deep Sky Observation</h3>
+        <p>How are observations made of structures like clusters</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="pics/Stellar.jpg" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Deep Sky Observation</h3>
+        <p>How are observations made of structures like clusters</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="pics/Stellar.jpg" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Deep Sky Observation</h3>
+        <p>How are observations made of structures like clusters</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Cosmology</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel5" data-slide-to="1"></li>
+    <li data-target="#myCarousel5" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Cosmology/Cosmology1.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Cosmology</h3>
+        <p>Witness the dust!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Cosmology/Cosmology1.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Cosmology</h3>
+        <p>Witness the dust!</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/Cosmology/Cosmology1.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Cosmology</h3>
+        <p>Witness the dust!</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel5" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Coordinate Systems</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel6" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel6" data-slide-to="1"></li>
+    <li data-target="#myCarousel6" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/CoordinateSystems/CoordinateSystems1.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Coordinate Systems</h3>
+        <p>Coordinate Systems of celestial sphere</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/CoordinateSystems/CoordinateSystems2.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Coordinate Systems</h3>
+        <p>Coordinate Systems of celestial sphere</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/CoordinateSystems/CoordinateSystems3.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Coordinate Systems</h3>
+        <p>Coordinate Systems of celestial sphere</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel6" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Celestial Mechanics</h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel7" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel7" data-slide-to="1"></li>
+    <li data-target="#myCarousel7" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Celestial/Celestial2.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Celestial Mechanics</h3>
+        <p>Mechanics of Solar System and Universe</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Celestial/Celestial3.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Celestial Mechanics</h3>
+        <p>Mechanics of Solar System and Universe</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/Celestial/Celestial5.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Celestial Mechanics</h3>
+        <p>Mechanics of Solar System and Universe</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+<h2> Amateur Astronomy </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel8" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel8" data-slide-to="1"></li>
+    <li data-target="#myCarousel8" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Amateur/Amateur1.jpg' %}" alt="Sun">
+
+      <div class="carousel-caption">
+        <h3>Amateur Astronomy </h3>
+        <p>Lets begin the journey!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Amateur/Amateur3.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+       <h3>Amateur Astronomy </h3>
+        <p>Lets begin the journey!</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/Amateur/Amateur5.jpg' %}" alt="Sun">
+      <div class="carousel-caption">
+        <h3>Amateur Astronomy </h3>
+        <p>Lets begin the journey!</p>
+      </div>
+    </div>
+   </div>
+
+  <a class="left carousel-control" href="#myCarousel8" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel8" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+</p>
+  </div>
+  <div id="Documentary" class="tab-pane fade">
+    <h3>Documentary photos</h3>
+    <a href='#'>link for complete album</a>
+  <h2> Previous Year's Documentary Screening </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel9" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel9" data-slide-to="1"></li>
+    <li data-target="#myCarousel9" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/' %}" alt="Beyond Big Bang">
+      <div class="carousel-caption">
+        <h3>Beyond Big Bang</h3>
+        <p>The theory that excites everyone!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/' %}" alt="Black Hole">
+      <div class="carousel-caption">
+        <h3>Black Hole</h3>
+        <p>The sink hole of Universe!</p>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="{% static 'home/pics/' %}" alt="Supernovae">
+      <div class="carousel-caption">
+        <h3>Supernovae</h3>
+        <p>An incredible death of a massive star!</p>
+      </div>
+    </div>
+ 
+    
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel9" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel9" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+  </div>
+  <div id="Observations" class="tab-pane fade">
+    <h3>observation photos</h3>
+    <a href='#'>link for complete album</a>
+    <h2> Star Gazing Sessions </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel11" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel11" data-slide-to="1"></li>
+   
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/Handling/Hanlding1.JPG' %}" alt="Star Gazing Sessions">
+      <div class="carousel-caption">
+        <h3>Star Gazing Sessions</h3>
+        <p>Star gazing sessions are always so much fun!</p>
+      </div>
+    </div>
+     <div class="item ">
+      <img src="{% static 'home/pics/Handling/Handling4.png' %}"  alt="Star Gazing Sessions">
+      <div class="carousel-caption">
+        <h3>Star Gazing Sessions</h3>
+        <p>Star gazing sessions are always so much fun!</p>
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel11" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel11" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+  </div>
+  <div id="trips" class="tab-pane fade in ">
+    <h3>Trip photos</h3>
+    <p><a href='#'>link for complete album</a></p>
+   <h2> GMRT </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel12" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel12" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel12" data-slide-to="1" ></li>
+    <li data-target="#myCarousel12" data-slide-to="2" ></li>
+    <li data-target="#myCarousel12" data-slide-to="3" ></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/pics/GMRT/GMRT2.jpg' %}"  alt="GMRT">
+      <div class="carousel-caption">
+        <h3>GMRT</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+    <div class="item ">
+      <img src="{% static 'home/pics/GMRT/GMRT1.jpg' %}"  alt="GMRT">
+      <div class="carousel-caption">
+        <h3>GMRT</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{% static 'home/pics/GMRT/GMRT3.jpg' %}"  alt="GMRT">
+      <div class="carousel-caption">
+        <h3>GMRT</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+    <div class="item ">
+      <img src="{% static 'home/pics/GMRT/GMRT4.jpg' %}"  alt="GMRT">
+      <div class="carousel-caption">
+        <h3>GMRT</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel12" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel12" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+<h2> Nehru planaterium </h2>
+<div class='container' style='padding:3em;'>
+<div id="myCarousel13" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel13" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel13" data-slide-to="1"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src = "{% static 'home/pics/Skytheatre.jpg' %}"   style="width: 100%;" alt="Nehru planaterium">
+      <div class="carousel-caption">
+        <h3>Nehru planaterium</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+     <div class="item">
+      <img src="{% static 'home/pics/NehruPlanetarium/NehruPlanetarium.jpg' %}"  style="width: 100%;" alt="Nehru planaterium">
+      <div class="carousel-caption">
+        <h3>Nehru planaterium</h3>
+        <p>Worth going!</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel13" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel13" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr/>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock %}

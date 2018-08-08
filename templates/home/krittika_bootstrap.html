@@ -1,0 +1,252 @@
+{% extends 'home/total.html' %}
+
+<!-- navigation buttons part -->
+{% load static %}
+<!-- modal part -->
+{% block body %}
+<div id="login" class="modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+
+        <form>
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" class="form-control" id="name">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+   <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="signup" class=" signup modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">SIGN-UP</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+       <form>
+ <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id='name' >
+  </div>
+ <div class="form-group">
+    <label for="user">Username:</label>
+    <input type="text" class="form-control" id='user' >
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+   <div class="form-group">
+    <label for="number">Phone-number:</label>
+    <input type="number" class="form-control" id='number' >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Sign-Up</button>
+</form>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal part -->
+<!-- adjusting-nav background -->
+<div class="container-fluid" style="height:56px;width:100%;">
+</div>
+
+  <!-- tagline part -->
+
+
+<div class="container-fluid"  style=' justify-content:flex;'>
+  <blockquote class="cinzel" style='text-align:center;'>Drooling over stars since 2002</blockquote>
+</div>
+  <!-- tagline part -->
+  <!-- photo of the day part -->
+<div class="container-fluid  w3-display-container w3-animate-left text-center w3-card-4 w3-round-large"  id="photo_of_the_day"  style="width:98%; padding:0 1.3% ;margin:0 1%;margin-bottom:0.8%;background-image:url({% static 'home/pics/photo_of_the_week.jpg' %});">
+<div class='w3-display-container' >
+  
+  <div class='w3-display-topleft w3-left-align'>
+  <h2 ><u>Photo Of The Week</u></h2>
+  <h3>M106 Spiral Galaxy</h3>
+  <p>This portrait of M106 contains only the inner structure around the halo and nucleus of this Seyfert II active galaxy. Large amounts of gas from the galaxy are thought to be falling into and fueling a supermassive black hole contained in the nucleus.</p>
+  <a href='https://apod.nasa.gov/apod/ap150216.html'>link to the photo</a>
+ 
+  </div>
+</div>
+</div>
+<div class='container-fluid w3-animate-right'>
+<div class="w3-card-4 w3-round-large" style="width:100%;padding:1.3% 0;margin:1% 0;">
+    <header class="w3-container " >
+      <h2 style='text-align:center;'>Vision</h2>
+      <hr/>
+    </header>
+
+    <div class="w3-container" style="padding:0 3%; padding-bottom:1%;">
+ <p style='text-indent: 8%;text-align: justify;'> Sky has been one of the first curious things in our childhood. 
+The first question of every child looking up at the sky are
+ "Why does the moon walk along with me? Why do some stars twinkle while others don't? 
+Why is their a Rabbit on the moon?" and a lot more. You are lying if you don't admit that you haven't 
+thought of being an Astronaut on growing up at one point or other of your childhood. But then comes the 
+schooling and the cut-throat competition of life and we forget the wonders of the sky. 
+Krittika is a place where you can revive the child in you and look up at the sky. 
+Its a group of astronomy enthusiasts who admire the vastness of the sky, the Sun, the planets, the moon, 
+the stars, the galaxies and a lot more. Our vision is threefold:
+</p>                       
+    </div>
+
+     <div class="w3-container">
+     <a href="#books-iframe" class="btn btn-info">Read More</a>
+     </div> 
+</div>
+</div>
+
+
+<!-- photo of the day part -->
+
+
+</div> -->
+
+<!-- google calendar of club-calendar part -->
+<section>
+<div class="w3-card-4 w3-round-large " style="width:98%;padding:1.3% 1%; margin:1% 1%;">
+    <header class="w3-container " >
+      <h1>Club-Calendar</h1>
+    </header>
+ <p class="cinzel" style="text-align:center;"> You CAN'T resist yourself to attend these events , Stay Tuned for the updates</p>
+    <div class="w3-container">
+  <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=0sfpdd57eggmra3qt2unr1ia70%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=Asia%2FCalcutta" 
+      style="border-width:0"  frameborder="0" scrolling="no"></iframe>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- google calendar of club-calendar part -->
+
+<!-- upcoming events -->
+<section id='club-calendar' >
+<div class='container-fluid w3-animate-right'>
+<div class="w3-card-4 w3-round-large" style="width:100%;padding:1.3% 1%;margin:1% 0;">
+    <header class="w3-container " >
+<hr/>
+<h2 ><b>Upcoming event</b></h2>
+<hr/>
+</header>
+<div class='container'>
+  <div class='row'>
+  <h2> Month / event name </h2>
+  <div class='col-sm-8 col-md-8'  >
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      {% load static %}
+      <img src="{% static 'home/pics/Amateur/Amateur3.jpg' %}" alt="Chania" >
+      <div class="carousel-caption">
+        <h3>Amateur Astronomy pic</h3>
+        <p>learning Astronomy is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Amateur/Amateur1.jpg' %}" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Amateur Astronomy pic</h3>
+        <p>learning Astronomy is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{% static 'home/pics/Amateur/Amateur5.jpg' %}" alt="New York">
+      <div class="carousel-caption">
+        <h3>Enthusiast people</h3>
+        <p>Motive is to know more</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  </div>
+ 
+  <div class='col-sm-4 col-md-4 shadeff' style='background-color:#DDD;height:25em;border-radius:0.8rem;margin-bottom:2%;padding-top: 1%;'>
+    
+    <h4 class="cinzel"  style='text-align:center;'> EVENT NAME </h4>
+    <table class='table cinzel'>
+      <tbody>
+       <tr> <th>Time: </th><td></td></tr>
+       <tr> <th> Location: </th></tr>
+       <tr> <th> description: </th></tr>  
+      </tbody>
+      <tfoot>
+            <tr><th> we will be waiting to see you!!</th></tr>
+      </tfoot>
+    </table>
+    </div>
+  </div>
+ 
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- upcoming events -->
+
+<!-- footer part -->
+
+{% endblock %}

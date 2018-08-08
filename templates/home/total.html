@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krittika</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{% static 'home/js/main_bootstrap.js' %}"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"> 
+  <link rel='html' type='text/html' href='team_bootstrap.html'>
+  <link rel="stylesheet" type='text/css' href="{% static 'home/css/main_bootstrap.css'%}">
+  <link rel='html' type='text/html' href='/photos/'>
+  <link rel='html' type='text/html' href='test.html'>
+  <link rel='html' type='text/html' href='/resources/'>
+  <link rel='html' type='text/html' href='/announcements/'>
+</head>
+<body data-spy="scroll"  >
+<button onclick="topFunction()" id="myBtn" title="Go to top" style='z-index:1000; margin-bottom:10px;'>Top</button>
+
+
+<!-- navigation buttons part -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id='top' >
+  <div class="container-fluid w3-animate-fade">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <img src="{% static 'home/pics/logo_gif.gif' %}" alt='group-icon' height='50px;' class='w3-round-large'/><a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="cinzel"><a href="{% url "home" %}">Home</a></li>
+        <li class="dropdown cinzel"><a class="dropdown-toggle" data-toggle="dropdown" href= "/events/">Events</a>
+            <ul class="dropdown-menu w3-animate-zoom" style="background-color:transparent;">
+              <li class="cinzel"><a href="/events/" class='btn btn-info'>Lecture</a></li>
+              <li ><a href="/events/" class="btn btn-info">GD and Quiz</a></li>
+              <li><a href="/events/" class="btn btn-info">Documentary</a></li>
+              <li><a href="/events/ #last_year_events" class="btn btn-info">StarGazing</a></li>
+              <li><a href="/events/ #last_year_events" class="btn btn-info">Trips</a></li>
+            </ul>
+        </li>
+        <li class="cinzel"><a href="/photos/">Souvenir</a></li>  
+        <li class="cinzel"><a href="/announcements/">Announcements</a></li>    
+        <li class="cinzel"><a href="/resources/">Resources</a></li> 
+        <li class="cinzel"><a href="/team/">About Us</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cinzel"><a data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li class="cinzel"><a data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% block body %}
+{% endblock %}
+
+<div class="container-fluid">
+<footer class="text-center w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%;margin:1% 1%;">
+<div class="row">
+<div class="col-md-6">
+<form  method="POST" class="post-form" id="formOne">
+ <legend style="color: white;"> Feedback </legend>
+{% csrf_token %}
+        {{ form.as_p }} 
+<div class="form-group">
+ <button type="submit" class="btn btn-info">Submit</button>
+</div>
+</form>
+</div>
+<div class="col-md-6">
+ <section id='links'>
+  <h3><u>Join Us On</u></h3>
+  
+ 
+    <a href="https://www.facebook.com/KrittikaIITB/" target="_blank"><i class="fa fa-facebook-square fa-3x sol" ></i></a>
+     <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-3x sog" ></i></a>
+    
+      <a href="#" ><i class="fa fa-instagram fa-3x sol" ></i></a>
+       
+ </section>
+  <section>
+  <h3><u>Links</u></h3>
+
+ <ul style="text-align: left; padding-left: 30%; ">
+  <li style="font-size: 1.3em;"><a href="https://krittika452.wordpress.com/">Q and A forum</a></li>
+  <li style="font-size: 1.3em;"><a href="/events/">Upcoming events</a></li>
+  <li style="font-size: 1.3em;"><a href="https://krittika452.wordpress.com/">Blog</a></li>
+ </ul>
+  </section>
+</div>
+</div>
+</footer>
+<div class="container-fluid text-center w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%;margin:1% 1%;"  id='copyright'>
+  <p >&copy;KRITTIKA TEAM 2K17-19  | Powered by Bootstrap</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends "home/total.html" %}
+
+{% block body %}
+{% endblock %}
+{% block form %}
+{% load static %}
+
+<div class="row">
+<div class="col-md-6">
+<form action="#" method="POST">
+	{% csrf_token %}
+ <legend style="color: white;"> Feedback </legend>
+	}
+<div class="form-group">
+ {{form.as_p}}
+</div>
+<div class="form-group">
+ {{form.as_p}}
+</div>
+<div class="form-group">
+  {{form.as_p}}
+</div>
+<div class="form-group">
+ <button type="submit" class="btn btn-info">Submit</button>
+</div>
+</form>
+</div>
+<div class="col-md-6">
+ <section id='links'>
+  <h3><u>Join Us On</u></h3>
+  
+ 
+    <a href="https://www.facebook.com/KrittikaIITB/" target="_blank"><i class="fa fa-facebook-square fa-3x sol" ></i></a>
+     <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus fa-3x sog" ></i></a>
+    
+      <a href="#" ><i class="fa fa-instagram fa-3x sol" ></i></a>
+       
+ </section>
+  <section>
+  <h3><u>Links</u></h3>
+
+ <ul style="text-align: left; padding-left: 30%; ">
+  <li style="font-size: 1.3em;"><a href="https://krittika452.wordpress.com/">Q and A forum</a></li>
+  <li style="font-size: 1.3em;"><a href="events_bootstrap.html">Upcoming events</a></li>
+  <li style="font-size: 1.3em;"><a href="https://krittika452.wordpress.com/">Blog</a></li>
+ </ul>
+  </section>
+</div>
+</div>
+</footer>
+<div class='col-md-12'id='copyright' style='background-color:black;'>
+  <p >&copy;krittika-team | Powered by Bootstrap</p>
+</div>
+</div>
+{% endblock %}

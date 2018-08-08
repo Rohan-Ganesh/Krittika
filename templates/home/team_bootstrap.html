@@ -1,0 +1,365 @@
+{% extends "home/total.html" %}
+<!-- navigation buttons part -->
+{% load static %}
+<!-- modal part -->
+{% block body %}
+<div id="login" class="modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+
+        <form>
+  <div class="form-group">
+    <label for="name">Username:</label>
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" class="form-control" id="name">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+   <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="signup" class=" signup modal fade" role="dialog" style="z-index:10000;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="cinzel modal-title">SIGN-UP</h4>
+      </div>
+      <div class="modal-body" style='background-color:#d3d3d3;'>
+       <form>
+ <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id='name' >
+  </div>
+ <div class="form-group">
+    <label for="user">Username:</label>
+    <input type="text" class="form-control" id='user' >
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+   <div class="form-group">
+    <label for="number">Phone-number:</label>
+    <input type="number" class="form-control" id='number' >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-default" style='background-color:skyblue;'>Sign-Up</button>
+</form>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal part -->
+<!-- adjusting-nav background -->
+<div class="container-fluid" style="height:56px;width:100%;">
+</div>
+
+
+  <div class="w3-card-4 w3-round-large" style="width:98%;padding:1.3% 1%; margin:1% 1%;">
+    <header class="w3-container " >
+    <h2 class='text-center'> EQUIPMENT </h2>
+    </header>
+    <p> description about the equipment </p>
+  <hr/>
+  </div>
+<!--
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title text-center">
+        <a  data-toggle="collapse" data-parent="#accordion" href="#previous_teams">
+        previous teams</a>
+      </h4>
+    </div>
+    <div id="previous_teams" class="panel-collapse collapse in">
+       <div class="panel-body">
+         <ul class="nav nav-pills ">
+           <li ><a href="#">2016-17</a></li>
+           <li><a href="#">2015-16</a></li>
+           <li><a href="#">2014-15</a></li>
+           <li><a href="#">2013-14</a></li>
+         </ul>
+       </div>
+     </div>
+</div>
+</div> -->
+
+<section>
+<div class="container-fluid">
+ <div class="w3-card-4 w3-round-large" style="width:100%;padding:1.3% 1%; margin:1% 0;">
+<ul class="nav nav-tabs nav-tabs-justified" id='legacy'>
+    <li class="active"><a data-toggle="tab" href="#current-team">Team</a></li>
+    <li><a data-toggle="tab" href="#prev1">2017-18</a></li>
+    <li><a data-toggle="tab" href="#prev2">2016-17</a></li>
+    <li><a data-toggle="tab" href="#prev3">2015-16</a></li>
+  </ul>
+<div class="tab-content">
+  <div id="current-team" class="tab-pane fade in active">
+    <div class="container-fluid text-center" >
+  <h3>OUR TEAM</h3>
+  <p><em>We love astronomy!</em></p>
+  <p></p>
+  <br>
+  <h2 style='text-align:center;'> manager</h2>
+<hr/>
+</div>
+
+<div class='container-fluid'>
+
+ <div class='row' id='manager'>
+   <div class=" col-md-12">
+        <center><img class='img-thumbnail ' style="width: 50%;" src='{% static 'home/pics/dp/team 2017-18/abhinav-dp.png' %}'/></center>
+        
+   <center><p  data-toggle="collapse" data-target="#demo3"  style='font-variant: small-caps;' > Abhinav </p></center>
+   
+
+   </div>
+ </div>
+<hr/>
+<h2 class="cinzel" style='text-align:center;'> convener</h2>
+  <div class='row' id='convener'>
+   <div class="col-sm-6 col-md-6">
+        <img class='img-thumbnail ' src='{% static 'home/pics/dp/team 2018-19/vedant.jpg' %}'/>
+        <p class="cinzel" style='text-align:center;'>Vedant</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+       <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2018-19/rohan.jpg' %}'/>
+        <p class="cinzel" style='text-align:center;'> Rohan</p>
+   </div>
+ </div>
+  <div class='row' id='convener'>
+   <div class="col-sm-4  col-md-4">
+       <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2018-19/maharishi.jpg' %}'/>
+       <p class="cinzel" style='text-align:center;'> Maharishi</p>
+   </div>
+   
+   <div class="col-sm-4  col-md-4">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2018-19/kunal.jpg' %}'/>
+        <p class="cinzel" style='text-align:center;'>Kunal</p>
+   </div>
+   <div class="col-sm-4  col-md-4">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2018-19/prathamesh.jpg' %}'/>
+        <p class="cinzel" style='text-align:center;'>Prathamesh</p>
+   </div>
+ </div>
+<hr/>
+</div>
+   
+  </div>
+
+<div id="prev1" class="tab-pane fade">
+<div class="container-fluid text-center" >
+  <h3>OUR TEAM</h3>
+  <p><em>We love astronomy!</em></p>
+  <p></p>
+  <br>
+  <h2 style='text-align:center;'> manager</h2>
+<hr/>
+</div>
+
+<div class='container-fluid'>
+
+ <div class='row' id='manager'>
+    <div class=" col-md-6">
+        <img class='img-thumbnail ' src='{% static 'home/pics/dp/gaurav-dp.jpg' %}'/>
+        
+   <p  data-toggle="collapse" data-target="#demo" class="cinzel" style='text-align:center;' >Gaurav Waratkar</p>
+   
+  <div id="demo" class="collapse fade in">
+   
+ <a href='#'>facebook-icon</a>
+   <p> contact information</p>
+  </div>
+
+   </div>
+   <div class="col-md-6">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/yashvi-dp.jpg' %}'/>
+        <p data-toggle="collapse" data-target="#demo2" class="cinzel" style='text-align:center;'> Yashvi Sharma </p>
+ <div id="demo2" class="collapse fade in">
+   <a href='#'>facebook-icon</a>
+   <p> contact information</p>
+  </div>
+   </div>
+ </div>
+<hr/>
+<h2 style='text-align:center;'> convener</h2>
+  <div class='row' id='convener'>
+   <div class="col-sm-6 col-md-6">
+        <img class='img-thumbnail ' src='{% static 'home/pics/dp/team 2017-18/abhinav-dp.png' %}'/>
+        <p class="cinzel" style='text-align:center; font-variant: small-caps;'> ABHINAV</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2017-18/abhijeet-dp.png' %}'/>
+        <p class="cinzel" style='text-align:center;'> Abhjeet Anand</p>
+   </div>
+ </div>
+  <div class='row' id='convener'>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2017-18/amit-dp.png' %}'/>
+        <p class="cinzel" style='text-align:center;'> Amit</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='{% static 'home/pics/dp/team 2017-18/chaithu-dp.png' %}'/>
+        <p class="cinzel" style='text-align:center;'> Chaithanya Naik</p>
+   </div>
+ </div>
+<hr/>
+</div>
+   
+  </div>
+  
+  <div id="prev2" class="tab-pane fade">
+    <div class="container-fluid text-center" >
+  <h3>OUR TEAM</h3>
+  <p><em>We love astronomy!</em></p>
+  <p>Description about something :P</p>
+  <br>
+  <h2 style='text-align:center;'> manager</h2>
+<hr/>
+</div>
+<div class='container-fluid'>
+
+ <div class='row' id='manager'>
+   <div class=" col-md-12">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class='dropdown1' style='text-align:center;'> 
+   <a href='#' class="cinzel" style='font-variant: small-caps;' > manager</a>
+   <div class='dropdown-content1'>
+   <a href='#'>facebook-icon</a>
+   <p> contact information</p>
+   </div>
+   </p>
+   </div>
+ </div>
+<hr/>
+<h2 style='text-align:center;'> convener</h2>
+  <div class='row' id='convener'>
+   <div class="col-sm-6 col-md-6">
+        <img class='img-thumbnail ' src='pics/team'/>
+        <p class="cinzel" style='text-align:center; font-variant: small-caps;'> convener1</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" class="cinzel" style='text-align:center;'> convener2</p>
+   </div>
+ </div>
+  <div class='row' id='convener'>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" style='text-align:center;'> convener3</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" style='text-align:center;'>convener 4</p>
+   </div>
+ </div>
+<hr/>
+</div>
+  </div>
+  <div id="prev3" class="tab-pane fade">
+<div class="container-fluid text-center" >
+  <h3>OUR TEAM</h3>
+  <p><em>We love astronomy!</em></p>
+  <p>Description about something :P</p>
+  <br>
+  <h2 style='text-align:center;'> manager</h2>
+<hr/>
+</div>
+<div class='container-fluid'>
+
+ <div class='row' id='manager'>
+   <div class=" col-md-12">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class='dropdown1' style='text-align:center;'> 
+   <a href='#' class="cinzel" style='font-variant: small-caps;' > manager</a>
+   <div class='dropdown-content1'>
+   <a href='#'>facebook-icon</a>
+   <p> contact information</p>
+   </div>
+   </p>
+   </div>
+ </div>
+<hr/>
+<h2 style='text-align:center;'> convener</h2>
+  <div class='row' id='convener'>
+   <div class="col-sm-6 col-md-6">
+        <img class='img-thumbnail ' src='pics/team'/>
+        <p class="cinzel" style='text-align:center; font-variant: small-caps;'> convener1</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" style='text-align:center;'> convener2</p>
+   </div>
+ </div>
+  <div class='row' id='convener'>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" style='text-align:center;'> convener3</p>
+   </div>
+   <div class="col-sm-6  col-md-6">
+        <img class='img-thumbnail' src='pics/team'/>
+        <p class="cinzel" style='text-align:center;'>convener 4</p>
+   </div>
+ </div>
+<hr/>
+</div>
+  </div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+
+{% endblock %}
